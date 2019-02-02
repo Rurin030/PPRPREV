@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload Paper Page</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="icon" type="image/png" href="/static/images/icons/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/form.css" />
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="/static/images/logo-modified.png" width="25%" />
+          </a>        <div class="navbar-nav col" id="nav-item-container-right"></div>
+        <div class="col"></div>
+        <div class="navbar-nav col" id="nav-item-container-left"></div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/static/images/logo-modified.png" width="25%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav col" id="nav-item-container-right"></div>
+          <div class="col"></div>
+          <div class="navbar-nav col" id="nav-item-container-left"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-contact100" id="profile-container">
+      <!-- <div class="mx-auto"> -->
+      <div class="wrap-contact100">
+        <!-- <div class="card-body"> -->
+
+        <form
+          role="form"
+          data-toggle="validator"
+          class="contact100-form validate-form"
+          action="/api/uploadPaper"
+          enctype="multipart/form-data"
+          method="POST"
+        >
+          <span class="contact100-form-title"> Submit A Paper ! </span>
+
+          <div class="form-group">
+            <div class="wrap-input100 validate-input">
+              <input
+                class="input100"
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Title"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="wrap-input100 validate-input">
+              <input
+                class="input100"
+                type="text"
+                id="author"
+                name="author"
+                placeholder="Author(s)"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="wrap-input100 validate-input">
+              <input
+                class="input100"
+                type="text"
+                id="keywords"
+                name="keywords"
+                placeholder="Keywords"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="wrap-input100 validate-input">
+              <textarea
+                class="input100"
+                id="abstract"
+                name="abstract"
+                placeholder="Abstract"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="wrap-input100 validate-input">
+              <textarea
+                class="input100"
+                id="method"
+                name="method"
+                placeholder="Method"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <br />
+          <div class="form-group">
+            <div>
+              <select class="input100" name="subject" id="subject">
+                <option value="other">Other</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="economics">Economics</option>
+                <option value="biology">Biology</option>
+              </select>
+            </div>
+          </div>
+
+          <br />
+          <div class="container-contact100-form-btn">
+            <div class="form-group">
+              <input type="file" name="photo" required />
+            </div>
+          </div>
+
+          <br />
+          <div class="container-contact100-form-btn">
+            <div class="form-group">
+              <button
+                class="contact100-form-btn"
+                aria-hidden="true"
+                type="submit"
+                value="Upload"
+                required
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- </div> -->
+  </body>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/navbar.js"></script>
+  <script src="/static/js/uploadpaper.js"></script>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paper</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="/static/jquery/jquery.min.js"></script>
+
+    <link
+      href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+
+    <!-- important mandatory libraries -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="/static/images/logo-modified.png" width="25%" />
+          </a>        <div class="navbar-nav col" id="nav-item-container-right"></div>
+        <div class="col"></div>
+        <div class="navbar-nav col" id="nav-item-container-left"></div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="/">ResearchRev.org</a> -->
+          <a class="navbar-brand" href="/">
+            <img src="/static/images/logo-modified.png" width="25%" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav col" id="nav-item-container-right"></div>
+            <div class="col"></div>
+            <div class="navbar-nav col" id="nav-item-container-left"></div>
+          </div>
+        </div>
+      </nav>
+
+    
+      <!-- <div class="card"> -->
+
+      <!-- <div>
+              <input id="input-id" type="text" class="rating float-right" data-size="sm" />
+            </div> -->
+      <hr />
+      <div class="row">
+        <div class="col-8">
+          <div class="card-body">
+              <div class="display-5" id="subject-card"></div>
+
+            <div class="display-5" id="papernumber-card"></div>
+
+
+
+            <a class="display-4" id="name-container"
+              ><!-- title inserted here --></a
+            >
+            
+
+            <div class="display-5" id="author">
+              <!-- author inserted here -->
+            </div>
+
+            <div id="new-comment">
+                <!-- new comment button inserted here -->
+              </div>
+           
+            </div>
+
+          </div>
+        <div class = "col-1"></div>
+
+        <!-- <div class="col-1">
+
+        </div> -->
+
+          <!-- <div class="row"></div> -->
+          <span class="col-3">
+
+              <div class="table-responsive">
+
+              <table class="table table-striped">
+                 
+                  <tbody>
+                    <tr>
+                      <th scope="row">Views</th>
+                      <td><div id="views-card"></div></td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"><div id="download-btn">
+                        <!-- new comment button inserted here -->
+                      </div></th>
+                      <td><div id="downloads-card">
+                
+                        </div></td>
+                   
+                    </tr>
+                    <tr>
+                        <th scope="row"><div id="likebtn"></div></th>
+                        <td><div id="likes-card">
+                
+                        </div></td>
+                     
+                      </tr>    
+                      
+                    
+
+                    
+                  </tbody>
+                </table>
+              </div>
+               
+                 
+              <!-- </div> -->
+
+            
+              
+              
+
+            </span>
+    <!-- <div class="container-fluid" id="paper-container"> -->
+          </div>
+        <!-- </div> -->
+
+
+
+      
+      </div>
+      <div class="row">
+      <div class="col-7">
+
+      <div class="card-body" id="abstract-card">
+        <h4><b>Abstract</b></h4>
+        <!-- abstract inserted here -->
+      </div>
+
+      <br />
+      <hr />
+      <div class="card-body" id="method-card">
+        <h4><b>Methods</b></h4>
+        <!-- abstract inserted here -->
+      </div>
+      <br />
+    </div>
+    <div class="col-5">
+        <div class="mx-auto bg-light">
+            <div class="card-body" id="comment-card">
+                <h3><b>Comments</b></h3>
+
+              <!-- comment list inserted here -->
+            </div>
+          </div>
+          <br />
+          <hr />
+          <div class="mx-auto bg-light">
+              <div class="card-body" id="version-card">
+                  <h3><b>Roadmap</b></h3>
+      
+                <!-- version list inserted here -->
+              </div>
+            </div>
+      </div>
+
+     
+
+    </div>
+
+      <!-- <div class="row mt-4"> -->
+      
+
+    </div>
+
+    <!-- Footer -->
+  </body>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/navbar.js"></script>
+  <script src="/static/js/paper.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

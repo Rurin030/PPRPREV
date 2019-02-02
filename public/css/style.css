@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Ubuntu-Bold;
+  src: url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+  font-weight: 300;
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+.story {
+  margin: 10px 0px;
+}
+.story-creator {
+  font-size: 20px;
+  font-weight: 600;
+}
+.story-content {
+  font-size: 40px;
+}
+.story-comments {
+}
+.comment-creator {
+  font-weight: 600;
+}
+
+.feed-container {
+  padding: 1rem 0;
+}
+
+div.circle-avatar {
+  /* make it responsive */
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  /* div height to be the same as width*/
+  padding-top: 100%;
+
+  /* make it a circle */
+  border-radius: 50%;
+
+  /* Centering on image`s center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
+
+  /* it is optional, for making this div centered in parent*/
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.large-profile-container {
+  padding: 0 35%;
+}
+
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+  max-width: 512px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0; /* gets height from padding-bottom */
+
+  /* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+    -webkit-overflow-scrolling: touch; overflow: auto; */
+}
+
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* padding-bottom = h/w as % -- sets aspect ratio */
+/* YouTube video aspect ratio */
+.responsive-wrapper-wxh-572x612 {
+  padding-bottom: 107%;
+}
+
+/* general styles */
+/* ============== */
+.set-border {
+  border: 5px inset #4f4f4f;
+}
+.set-box-shadow {
+  -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+  -moz-box-shadow: 4px 4px 14px #4f4f4f;
+  box-shadow: 4px 4px 14px #4f4f4f;
+}
+.set-padding {
+  padding: 40px;
+}
+.set-margin {
+  margin: 30px;
+}
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.align-top {
+  border: 1px solid red;
+
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.float-left {
+  font-family: Ubuntu-Bold;
+  src: url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.row-col {
+  width: 70%;
+  text-align: left;
+}
+
+.paper-author {
+  font-size: 20px;
+}
+.paper-number {
+  font-size: 20px;
+}
+
+.glyphicon {
+  font-size: 50px;
+}

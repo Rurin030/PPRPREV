@@ -1,0 +1,181 @@
+<!-- this is home page -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>PPRP Home Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/heroic-features.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/static/images/logo-modified.png" width="25%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav col" id="nav-item-container-right"></div>
+          <div class="col"></div>
+          <div class="navbar-nav col" id="nav-item-container-left"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <!-- <img class="card-img-top" src="/static/images/bg.jpg" alt="" /> -->
+      <style>
+        .JumboHeaderImg {
+          background-image: url("/static/images/bg1.gif");
+          background-size: cover;
+        }
+      </style>
+      <!-- Jumbotron Header -->
+      <div class="jumbotron my-4 JumboHeaderImg">
+        <!-- <header class="jumbotron my-4 JumboHeaderImg"> -->
+        <h3 class="display-4 text-white">
+          Welcome to Public Peer Review Platform
+        </h3>
+        <!-- <p class="lead"> -->
+        <div class="col-10">
+          <p class="display-6 text-white">
+            A platform creating a truly open peer review system for the
+            researcher, by the researcher. This is a project initiated by a
+            group doctoral students who believe research experience could be
+            better. In facing the limitations of current peer review system, we
+            propose an alternative preprint system allowing the related
+            community members to review research articles and establish
+            collaboration.
+          </p>
+        </div>
+        <br />
+        <a href="/api/upload_paper_form" class="btn btn-light btn-lg"
+          >Submit your first paper</a
+        >
+        <!-- </header> -->
+      </div>
+
+      <!-- Page Features -->
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/static/images/phy.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Physics</h4>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <a href="#physics" class="btn btn-info">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/static/images/chem.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Chemistry</h4>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <a href="#chem" class="btn btn-info">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/static/images/eco.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Economics</h4>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <a href="#econs" class="btn btn-info">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="/static/images/bio.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Biology</h4>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <a href="#biology" class="btn btn-info">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class=" row text-center"> -->
+        <!-- <div class="col-lg-3 col-md-6 mb-12"> -->
+        <div class="container">
+          <div class="col-12 text-left" style="margin:10px;">
+            <!-- <div class="card"> -->
+            <br />
+            <br />
+            <a name="physics"><h5>Physics</h5></a>
+            <div class="card-body" id="physics-card"></div>
+
+            <a name="chem"><h5>Chemistry</h5></a>
+            <div class="card-body" id="chemistry-card"></div>
+
+            <a name="econs"><h5>Economics</h5></a>
+            <div class="card-body" id="econ-card"></div>
+
+            <a name="biology"><h5>Biology</h5></a>
+            <div class="card-body" id="biology-card"></div>
+
+            <a name="other"><h5>Other</h5></a>
+            <div class="card-body" id="other-card"></div>
+            <!-- </div> -->
+          </div>
+          <!-- /.row -->
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; PPRP 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/home.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/jquery/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
